@@ -9,7 +9,7 @@
 		http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
 		http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd">
 
-    <include file="db/change-1.xml" />
+    <include file="db/create-schema.sql" />
     <include file="db/seed-users.sql" />
     <include file="db/seed-books.sql" />
     <include file="db/seed-reviews.sql" />
