@@ -1,0 +1,6 @@
+**/.m2
+**/target
+**/.idea
+**/node_modules
+**/dist
+
