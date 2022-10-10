@@ -14,9 +14,12 @@ import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
+@Builder
 @NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
+@EqualsAndHashCode
 @Entity
 public class Review {
 
