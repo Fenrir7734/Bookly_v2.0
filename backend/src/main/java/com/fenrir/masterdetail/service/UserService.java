@@ -92,13 +92,6 @@ public class UserService {
     }
 
     @Transactional
-    public UserResponseDTO create(SignUpDTO userRequestDTO) {
-        User user = userMapper.fromUserRequestDTO(userRequestDTO);
-        user = userRepository.save(user);
-        return userMapper.toUserResponseDTO(user);
-    }
-
-    @Transactional
     public void updateRole(String username, Role role) {
         User user = getByUsername(username);
         user.setRole(role);
