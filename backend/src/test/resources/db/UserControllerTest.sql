@@ -1,3 +1,5 @@
+DELETE FROM user;
+
 INSERT INTO user (id, created_at, email, firstname, lastname, password, role, username)
 VALUES (101, '2022-05-19 09:23:47.296698', 'jan.kowalski@gmail.com', 'Jan', 'Kowalski',
         '$2a$10$gWVVXkBXT9wRQYwijDs3h.JOL3a2pFQWKFphsJqr8OU/46VHzweua', 'ROLE_ADMIN', 'kowalski');
