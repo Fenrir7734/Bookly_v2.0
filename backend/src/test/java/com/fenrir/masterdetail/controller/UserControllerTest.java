@@ -1,6 +1,5 @@
 package com.fenrir.masterdetail.controller;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fenrir.masterdetail.model.Role;
 import com.fenrir.masterdetail.model.User;
 import com.fenrir.masterdetail.repository.UserRepository;
@@ -27,10 +26,6 @@ class UserControllerTest extends IntegrationTest {
     private static final String GET_BY_USERNAME_ENDPOINT = USER_CONTROLLER_ENDPOINT + "/{username}";
     private static final String GRANT_ROLE_ENDPOINT = USER_CONTROLLER_ENDPOINT + "/{username}/grant/{role}";
     private static final String DELETE_ENDPOINT = USER_CONTROLLER_ENDPOINT + "/{username}";
-    private static final String CHANGE_PASSWORD_ENDPOINT = USER_CONTROLLER_ENDPOINT + "/{username}/change-pass";
-
-    @Autowired
-    private ObjectMapper objectMapper;
 
     @Autowired
     private UserRepository userRepository;
