@@ -1,6 +1,13 @@
+DELETE FROM review;
+
 INSERT INTO user (id, created_at, email, firstname, lastname, password, role, username)
 VALUES (101, '2022-05-19 09:49:09.832115', 'adam.nowak@gmail.com', 'Adam', 'Nowak',
         '$2a$10$mQqFLlWERo/a51UoImP9ZuynHVas7WL.cDs0n18oUmIbfv27M4gJK', 'ROLE_USER', 'nowak');
+
+INSERT INTO user (id, created_at, email, firstname, lastname, password, role, username)
+VALUES (102, '2022-05-19 09:49:09.832115', 'jan.kowalski@gmail.com', 'Jan', 'Kowalski',
+        '$2a$10$mQqFLlWERo/a51UoImP9ZuynHVas7WL.cDs0n18oUmIbfv27M4gJK', 'ROLE_USER', 'kowalski');
+
 
 INSERT INTO book (id, author, cover, created_at, description, title, updated_at)
 VALUES (101, 'George R.R. Martin',
